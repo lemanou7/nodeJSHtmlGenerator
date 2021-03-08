@@ -1,0 +1,14 @@
+
+.bg {
+    background: rgb(75, 51, 51);
+}
+
+.bg-card-header{
+    background: rgb(136, 115, 115);
+}
+.jumbotron{
+    height: 100px;
+    margin-bottom: 20px;
+    
+}
+
