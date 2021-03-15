@@ -1,7 +1,4 @@
-# nodeJSHtmlGenerator
-
-
-# Team Profile Generator
+# Team Profile Generator Using NodeJS
 
 ## Subject: Responsive Profile Generator
 
@@ -68,8 +65,10 @@ You can use any code editor of your choise, i use Vs Code because it is open sou
 
 1. Look the App demonstration 
 
-![App](./video/video-gif.gif)
+![App](./video/video.gif)
 
+[Click Here To See The Video](https://drive.google.com/file/d/1FulQMIpM-BMifu8VZNn-NDKBLTFU4yOM/view
+)
 
 <!-- CONTACT -->
 ## Contact

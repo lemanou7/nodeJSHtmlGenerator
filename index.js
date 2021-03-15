@@ -12,12 +12,12 @@ const writeFileAsync = util.promisify(fs.writeFile);
 const appendFileAsync = util.promisify(fs.appendFile);
 
 let teamArray = [];
-let teamData = '';
+let grossData = '';
 
 
-console.log("---------------------------------");
+console.log("-----------------------------");
 console.log("Team Profile Generator")
-console.log("---------------------------------");
+console.log("-----------------------------");
 
 // Inquirer prompts to collect user data
 async function prompt() {
@@ -124,16 +124,16 @@ async function prompt() {
     } while (areYouDone.finish === "Yes");
 }
 
-// init function to run application
+// build function to run application
 async function build() {
     try {
         await prompt()
 
         for (let i = 0; i < teamArray.length; i++) {
-            teamData = teamData + html.cardsTemplate(teamArray[i]);
+            grossData += html.cardsTemplate(teamArray[i]);
         }
 
-        let finishedHtml = html.createBaseHtml(teamData)
+        let finishedHtml = html.createBaseHtml(grossData)
 
         
         writeFileAsync("./dist/index.html", finishedHtml);
@@ -142,5 +142,5 @@ async function build() {
         return console.log(err);
     }
 }
-// initial program
+// run program
 build();
